@@ -46,6 +46,7 @@
     </section>
 </header>
 <main>
+
     <aside>
     <nav>
         <div>
@@ -65,70 +66,148 @@
             <h4>Order Details</h4>
         </div>
     </nav>
-<!--    <nav id="nav_list">-->
 
-<!--        <img class="nav_icon" src="asset/icon/icons8-purchase-order-96.png" alt="order.png">-->
-<!--        <pre>Order</pre>-->
-
-<!--        <img class="nav_icon" src="asset/icon/icons8-customer-64.png" alt="order.png">-->
-<!--        <pre>Order</pre>-->
-
-<!--        <img class="nav_icon" src="asset/icon/icons8-product-90.png" alt="order.png">-->
-<!--        <pre>Items</pre>-->
-<!--        <img class="nav_icon" src="asset/icon/icons8-more-details-100.png" alt="order.png">-->
-<!--        <pre id="order_details">Order Details-->
-<!--        </pre>-->
-<!--    </nav>-->
 </aside>
-    <section id="makeOrderSect">
-        <div>
-            <h2>Make Order</h2>
-        </div>
 
-        <div>
-            <section>
-                <div id="order_details">
-                    <div><p>Order Details</p></div>
-                    <div>
-                        <input type="text" placeholder=" Order ID">
-                        <input type="text" placeholder=" Customer ID">
+    <section id="orderForm">
+        <section id="makeOrderSect">
+            <div>
+                <h2>Make Order</h2>
+            </div>
+
+            <div>
+                <section>
+                    <div id="order_details">
+                        <div><p>Order Details</p></div>
+                        <div>
+                            <input type="text" placeholder=" Order ID">
+                            <input type="text" placeholder=" Customer ID">
+                        </div>
+                        <div><input type="text" placeholder=" Customer Name"></div>
+                        <div><input type="text" placeholder=" Date"></div>
+                        <div>
+                            <div> <p>Search By</p></div>
+                            <input type="text" placeholder=" Order ID">
+                        </div>
+
                     </div>
-                    <div><input type="text" placeholder=" Customer Name"></div>
-                    <div><input type="text" placeholder=" Date"></div>
+                    <div id="item_details">
+                        <div><p>Item Details</p></div>
+                        <div>
+                            <input type="text" placeholder=" Item Code">
+                            <input type="text" placeholder=" Available QTY">
+                        </div>
+                        <div><input type="text" placeholder=" Item Name"></div>
+                        <div>
+                            <input type="text" placeholder=" Unit Price">
+                            <input type="text" placeholder=" Discount">
+                        </div>
+                        <div>
+                            <input type="text" placeholder=" Need QTY">
+                        </div>
+                    </div>
+                </section>
+                <section>
                     <div>
-                        <div> <p>Search By</p></div>
-                        <input type="text" placeholder=" Order ID">
+                        <div>Delete</div>
+                        <div>Update</div>
+                        <div>Clear</div>
+                    </div>
+                    <div>
+                        <table border="1">
+                            <thead>
+                            <th>Order Id</th>
+                            <th>Customer Id</th>
+                            <th>Date</th>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+
                     </div>
 
-                </div>
-                <div id="item_details">
-                    <div><p>Item Details</p></div>
-                    <div>
-                        <input type="text" placeholder=" Item Code">
-                        <input type="text" placeholder=" Available QTY">
-                    </div>
-                    <div><input type="text" placeholder=" Item Name"></div>
-                    <div>
-                        <input type="text" placeholder=" Unit Price">
-                        <input type="text" placeholder=" Discount">
-                    </div>
-                    <div>
-                        <input type="text" placeholder=" Need QTY">
-                    </div>
-                </div>
-            </section>
-            <section>
+
+                </section>
+            </div>
+        </section>
+        <section id="purchOrderSect">
+            <div>
+                <h2>Order ID: 001</h2>
+            </div>
+            <div>
+
                 <div>
+                    <div>
+                        <p>⭐ IT-035 </p>
+                        <div>
+                            <p>RED Rice </p>
+                            <p>10Kg  </p>
+                            <p>2300 RS</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>⭐ IT-005 </p>
+                        <div>
+                            <p>Tikiri Mari </p>
+                            <p>2 Pck  </p>
+                            <p>300 RS</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div>
+                    <p>Total Amount : </p>
+                    <p>15 000 RS</p>
+                </div>
+
+                <div>
+                    <div>Purchase Order</div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section id="customerForm" class="crudForm">
+
+            <div>
+                <h2>Manage Customer</h2>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <p>Customer Details</p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder=" Customer ID">
+                        <input type="text" placeholder=" Name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder=" Address">
+                        <input type="text" placeholder=" Email">
+                    </div>
+                    <div>
+                        <div>Search By</div>
+                        <input type="text" placeholder="Customer ID">
+                    </div>
+                </div>
+                <div>
+                    <div>Add Customer</div>
                     <div>Delete</div>
                     <div>Update</div>
                     <div>Clear</div>
+
                 </div>
                 <div>
                     <table border="1">
                         <thead>
-                        <th>Order Id</th>
-                        <th>Customer Id</th>
-                        <th>Date</th>
+                        <th>Customer ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Salary</th>
                         </thead>
                         <tbody>
 
@@ -136,89 +215,66 @@
                     </table>
 
                 </div>
+            </div>
 
-
-            </section>
-        </div>
     </section>
 
-    <section id="purchOrderSect">
+    <section id="itemForm" class="crudForm">
+
         <div>
-            <h2>Order ID: 001</h2>
+            <h2>Manage Item</h2>
         </div>
         <div>
-
             <div>
                 <div>
-                    <p>⭐ IT-035 </p>
-                    <div>
-                        <p>RED Rice </p>
-                        <p>10Kg  </p>
-                        <p>2300 RS</p>
-                    </div>
+                    <p>Item Details</p>
                 </div>
                 <div>
-                    <p>⭐ IT-005 </p>
-                    <div>
-                        <p>Tikiri Mari </p>
-                        <p>2 Pck  </p>
-                        <p>300 RS</p>
-                    </div>
+                    <input type="text" placeholder=" Item Code">
+                    <input type="text" placeholder=" Name">
                 </div>
-
-
+                <div>
+                    <input type="text" placeholder=" Unite Price">
+                    <input type="text" placeholder=" Quantity">
+                </div>
+                <div>
+                    <div>Search By</div>
+                    <input type="text" placeholder=" Item Code">
+                </div>
             </div>
-
             <div>
-                <p>Total Amount : </p>
-                <p>15 000 RS</p>
-            </div>
+                <div>Add Item</div>
+                <div>Delete</div>
+                <div>Update</div>
+                <div>Clear</div>
 
+            </div>
             <div>
-                <div>Purchase Order</div>
-            </div>
+                <table border="1">
+                    <thead>
+                    <th>Item Code</th>
+                    <th>Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    </thead>
+                    <tbody>
 
+                    </tbody>
+                </table>
+
+            </div>
         </div>
+
     </section>
-<!--<main >-->
-<!--<section id="order_detail">-->
-<!--    <div class="seper">-->
-<!--        <h3 class="head_tag">Make Order</h3>-->
 
-<!--    </div>-->
-<!--    <section class="seper">-->
-<!--        <section>-->
-<!--            <p style="margin: 0">Order Details</p>-->
+    <section id="orderDetailsForm">
 
 
-<!--        </section>-->
-<!--        <section>-->
+    </section>
 
-<!--        </section>-->
-<!--        <section>-->
-
-<!--        </section>-->
-<!--        <section>-->
-
-<!--        </section>-->
-
-
-<!--    </section>-->
-
-<!--</section>-->
-<!--    <section id="item_detail">-->
-<!--        <div class="seper">-->
-<!--            <h3 class="head_tag">Order ID : </h3>-->
-
-<!--        </div>-->
-<!--        <section class="seper">-->
-
-<!--        </section>-->
-<!--    </section>-->
-
-<!--</main>-->
 
 </main>
+
 <footer>
     <p>Copyright @ 2023 All Right Reserved By Supun Madubhashitha</p>
 </footer>
