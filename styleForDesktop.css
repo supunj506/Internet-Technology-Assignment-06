@@ -104,10 +104,10 @@ main > aside > nav > div {
 #orderForm {
     width: 94%;
     height: 100%;
-    /*display: flex;*/
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    display: none;
+
     /*----------------------------------              ---------------------------------   ------------------------------  --------------------*/
 }
 #orderForm > section {
@@ -392,7 +392,7 @@ main > aside > nav > div {
 
 
 /*------------------Customer Form-------------------------------------------------------------------------------------*/
-.crudForm {
+#customerForm {
     width: 94%;
     height: 100%;
     display: flex;
@@ -404,7 +404,7 @@ main > aside > nav > div {
     /*background-color: red;*/
 }
 
-.crudForm  > div:first-child {
+#customerForm > div:first-child {
     width: 98%;
     height: 8%;
     background-color: #BED7FD;
@@ -415,7 +415,7 @@ main > aside > nav > div {
     font-size: 1.2em;
 
 }
-.crudForm  > div:nth-child(2) {
+#customerForm  > div:nth-child(2) {
     width: 98%;
     height: 88%;
     background-color:#d6e7ff ;
@@ -424,7 +424,7 @@ main > aside > nav > div {
     flex-direction:column ;
 }
 /*---------------------------------------*/
-.crudForm  > div:nth-child(2) > div:first-child {
+#customerForm  > div:nth-child(2) > div:first-child {
     width: 60%;
     height: 50%;
     /*background-color: #C2A3F4;*/
@@ -434,29 +434,29 @@ main > aside > nav > div {
     align-self: flex-start;
     margin-left: 3%;
 }
-.crudForm  > div:nth-child(2) > div:first-child > div {
+#customerForm  > div:nth-child(2) > div:first-child > div {
     display: flex;
     width: 90%;
     height: 23%;
     align-items: center;
     justify-content: space-around;
 }
-.crudForm  > div:nth-child(2) > div:first-child > div > input {
+#customerForm > div:nth-child(2) > div:first-child > div > input {
     border-radius: 0.5em;
     border: none;
     width: 55%;
     height: 60%;
 }
-.crudForm  > div:nth-child(2) > div:first-child > div:first-child {
+#customerForm  > div:nth-child(2) > div:first-child > div:first-child {
     font-size: 1.5em;
 }
-.crudForm > div:nth-child(2) > div:first-child > div:nth-child(2) > input {
+#customerForm > div:nth-child(2) > div:first-child > div:nth-child(2) > input {
     width: 40%;
 }
-.crudForm  > div:nth-child(2) > div:first-child > div:nth-child(3) > input {
+#customerForm  > div:nth-child(2) > div:first-child > div:nth-child(3) > input {
     width: 40%;
 }
-.crudForm  > div:nth-child(2) > div:first-child > div:nth-child(4) > div {
+#customerForm  > div:nth-child(2) > div:first-child > div:nth-child(4) > div {
     width: 20%;
     height: 60%;
     display: flex;
@@ -474,7 +474,7 @@ main > aside > nav > div {
 
 /*------------------------------------------*/
 
-.crudForm  > div:nth-child(2) > div:nth-child(2) {
+#customerForm  > div:nth-child(2) > div:nth-child(2) {
     width: 65%;
     height: 10%;
     /*background-color: red;*/
@@ -484,7 +484,7 @@ main > aside > nav > div {
     align-items: flex-start;
 
 }
-.crudForm  > div:nth-child(2) > div:nth-child(2) > div {
+#customerForm  > div:nth-child(2) > div:nth-child(2) > div {
     width: 18%;
     height: 80%;
     display: flex;
@@ -500,7 +500,7 @@ main > aside > nav > div {
 
 }
 /*-----------------------------------------------------*/
-.crudForm  > div:nth-child(2) > div:nth-child(3) {
+#customerForm  > div:nth-child(2) > div:nth-child(3) {
     width: 90%;
     height: 40%;
     align-self: center;
@@ -509,7 +509,7 @@ main > aside > nav > div {
     justify-content: center;
 
 }
-.crudForm  > div:nth-child(2) > div:nth-child(3) > table {
+#customerForm  > div:nth-child(2) > div:nth-child(3) > table {
     width: 98%;
     height: 95%;
     font-size: 1.5em;
@@ -520,12 +520,8 @@ main > aside > nav > div {
 }
 
 /*------------------------    -----------------------------------         -----------------------------           -------------------------       ------------------------*/
-#customerForm {
-    display: none;
-}
-#itemForm {
-    display: none;
-}
+
+
 
 /*---------------------- Order Details Form ------------------------------------------------------------------*/
 
@@ -611,4 +607,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#customerForm {
+    display:none;
+}
+#itemForm {
+    display: none;
+}
+#orderDetailsForm {
+    display: none;
 }
