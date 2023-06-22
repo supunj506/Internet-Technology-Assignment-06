@@ -104,13 +104,19 @@ main > aside > nav > div {
 #orderForm {
     width: 94%;
     height: 100%;
+}
+
+#orderForm > div {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    /*----------------------------------              ---------------------------------   ------------------------------  --------------------*/
 }
-#orderForm > section {
+    /*----------------------------------              ---------------------------------   ------------------------------  --------------------*/
+
+#orderForm > div > section {
     display: flex;
 }
 #makeOrderSect{
@@ -395,16 +401,20 @@ main > aside > nav > div {
 #customerForm {
     width: 94%;
     height: 100%;
+
+}
+#customerForm > div {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    /*background-color: red;*/
 }
 
-#customerForm > div:first-child {
+#customerForm > div > div:first-child {
     width: 98%;
     height: 8%;
     background-color: #BED7FD;
@@ -415,7 +425,7 @@ main > aside > nav > div {
     font-size: 1.2em;
 
 }
-#customerForm  > div:nth-child(2) {
+#customerForm  > div > div:nth-child(2) {
     width: 98%;
     height: 88%;
     background-color:#d6e7ff ;
@@ -424,7 +434,7 @@ main > aside > nav > div {
     flex-direction:column ;
 }
 /*---------------------------------------*/
-#customerForm  > div:nth-child(2) > div:first-child {
+#customerForm  > div > div:nth-child(2) > div:first-child {
     width: 60%;
     height: 50%;
     /*background-color: #C2A3F4;*/
@@ -434,29 +444,29 @@ main > aside > nav > div {
     align-self: flex-start;
     margin-left: 3%;
 }
-#customerForm  > div:nth-child(2) > div:first-child > div {
+#customerForm  > div > div:nth-child(2) > div:first-child > div {
     display: flex;
     width: 90%;
     height: 23%;
     align-items: center;
     justify-content: space-around;
 }
-#customerForm > div:nth-child(2) > div:first-child > div > input {
+#customerForm > div > div:nth-child(2) > div:first-child > div > input {
     border-radius: 0.5em;
     border: none;
     width: 55%;
     height: 60%;
 }
-#customerForm  > div:nth-child(2) > div:first-child > div:first-child {
+#customerForm  > div > div:nth-child(2) > div:first-child > div:first-child {
     font-size: 1.5em;
 }
-#customerForm > div:nth-child(2) > div:first-child > div:nth-child(2) > input {
+#customerForm > div > div:nth-child(2) > div:first-child > div:nth-child(2) > input {
     width: 40%;
 }
-#customerForm  > div:nth-child(2) > div:first-child > div:nth-child(3) > input {
+#customerForm  > div > div:nth-child(2) > div:first-child > div:nth-child(3) > input {
     width: 40%;
 }
-#customerForm  > div:nth-child(2) > div:first-child > div:nth-child(4) > div {
+#customerForm  > div > div:nth-child(2) > div:first-child > div:nth-child(4) > div {
     width: 20%;
     height: 60%;
     display: flex;
@@ -474,7 +484,7 @@ main > aside > nav > div {
 
 /*------------------------------------------*/
 
-#customerForm  > div:nth-child(2) > div:nth-child(2) {
+#customerForm  > div > div:nth-child(2) > div:nth-child(2) {
     width: 65%;
     height: 10%;
     /*background-color: red;*/
@@ -484,7 +494,7 @@ main > aside > nav > div {
     align-items: flex-start;
 
 }
-#customerForm  > div:nth-child(2) > div:nth-child(2) > div {
+#customerForm  > div > div:nth-child(2) > div:nth-child(2) > div {
     width: 18%;
     height: 80%;
     display: flex;
@@ -500,7 +510,7 @@ main > aside > nav > div {
 
 }
 /*-----------------------------------------------------*/
-#customerForm  > div:nth-child(2) > div:nth-child(3) {
+#customerForm  > div > div:nth-child(2) > div:nth-child(3) {
     width: 90%;
     height: 40%;
     align-self: center;
@@ -509,7 +519,7 @@ main > aside > nav > div {
     justify-content: center;
 
 }
-#customerForm  > div:nth-child(2) > div:nth-child(3) > table {
+#customerForm  > div > div:nth-child(2) > div:nth-child(3) > table {
     width: 98%;
     height: 95%;
     font-size: 1.5em;
@@ -529,12 +539,18 @@ main > aside > nav > div {
     width: 94%;
     height: 100%;
     /*background-color: #C2A3F4;*/
+
+}
+#orderDetailsForm > div {
+    width: 100%;
+    height: 100%;
+    /*background-color: #C2A3F4;*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-#orderDetailsForm > section {
+#orderDetailsForm > div > section {
     width: 98%;
     height: 48%;
     /*background-color: chartreuse;*/
@@ -544,7 +560,7 @@ main > aside > nav > div {
     justify-content: space-around;
     align-items: center;
 }
-#orderDetailsForm > section > div:first-child {
+#orderDetailsForm > div > section > div:first-child {
     width: 100%;
     height: 15%;
     background-color: #C2A3F4;
@@ -555,14 +571,14 @@ main > aside > nav > div {
     justify-content: center;
     align-items: center;
 }
-#orderDetailsForm > section:first-child > div:first-child {
+#orderDetailsForm > div > section:first-child > div:first-child {
     background-color: #BED7FD;
 }
-#orderDetailsForm > section:nth-child(2) > div:first-child {
+#orderDetailsForm > div > section:nth-child(2) > div:first-child {
     background-color: #C2A3F4;
 }
 
-#orderDetailsForm > section > div:nth-child(2) {
+#orderDetailsForm > div > section > div:nth-child(2) {
     width: 100%;
     height: 80%;
     background-color: #C2A3F4;
@@ -573,14 +589,14 @@ main > aside > nav > div {
     justify-content: center;
     align-items: center;
 }
-#orderDetailsForm > section:first-child > div:nth-child(2) {
+#orderDetailsForm > div > section:first-child > div:nth-child(2) {
     background-color: #d6e7ff;
 }
 
-#orderDetailsForm > section:nth-child(2) > div:nth-child(2) {
+#orderDetailsForm > div > section:nth-child(2) > div:nth-child(2) {
     background-color:  #ccc1ff;
 }
-#orderDetailsForm > section:first-child > div:nth-child(2) > table {
+#orderDetailsForm > div > section:first-child > div:nth-child(2) > table {
     width: 65%;
     height: 95%;
     font-size: 1.1em;
@@ -589,7 +605,7 @@ main > aside > nav > div {
     border-radius: 1em;
 
 }
-#orderDetailsForm > section:nth-child(2) > div:nth-child(2) > table {
+#orderDetailsForm > div > section:nth-child(2) > div:nth-child(2) > table {
     width: 95%;
     height: 95%;
     font-size: 1.1em;
@@ -609,12 +625,9 @@ footer {
     align-items: center;
 }
 
-#customerForm {
-    display:none;
-}
-#itemForm {
+.form {
     display: none;
 }
-#orderDetailsForm {
-    display: none;
+.form.active-form {
+    display: block;
 }
