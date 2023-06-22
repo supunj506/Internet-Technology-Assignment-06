@@ -5,3 +5,114 @@
  * Project : Web POS
  * Created by IntelliJ IDEA.
  */
+
+/*----style for header----------------------*/
+header{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    /*background-color: #BED7FD;*/
+}
+header > section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+header > section:first-child > img {
+    width: 20%;
+    height: 70%;
+    margin-left: 3%;
+}
+header > section:first-child > h2 {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Rubik', sans-serif;
+    margin-left: 10%;
+    font-size: 30px;
+    font-weight: lighter;
+
+}
+header > section:nth-child(2) > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+}
+
+header > section:nth-child(2) > div:first-child {
+    justify-content: space-around;
+    font-size: 20px;
+
+}
+header > section:nth-child(2) > div:nth-child(2) {
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+header > section:nth-child(2) > div:nth-child(2) > img {
+    margin-left: 20%;
+    width: 15%;
+}
+
+/*----style for main----------------------*/
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 88vh;
+}
+
+/*------aside nav---------------*/
+main > aside {
+    width: 6%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+main > aside > nav {
+    width: 80%;
+    height: 80%;
+    margin-top: 70%;
+
+}
+main > aside > nav > div > img {
+    width: 100%;
+    height: 50%;
+}
+main > aside > nav > div > h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    margin-top: 5%;
+    text-align: center;
+}
+main > aside > nav > div {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+/*----style for footer----------------------------------------------------------------------------*/
+footer {
+    width: 100%;
+    height: 4vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: none;
+}
+.form.active-form {
+    display: block;
+}
