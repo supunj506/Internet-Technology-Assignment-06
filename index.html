@@ -182,11 +182,7 @@
 
                             </div>
                         </section>
-
         </div>
-
-
-
 
     </section>
 
@@ -201,34 +197,39 @@
                         <p>Customer Details</p>
                     </div>
                     <div>
-                        <input placeholder=" Customer ID" type="text">
-                        <input placeholder=" Name" type="text">
+                        <input id="inputCusId" placeholder=" Customer ID" type="text">
+                        <input id="inputCusName" placeholder=" Name" type="text">
                     </div>
                     <div>
-                        <input placeholder=" Address" type="text">
-                        <input placeholder=" Email" type="text">
+                        <input id="inputCusAddress" placeholder=" Address" type="text">
+                        <input id="inputCusEmail" placeholder=" Email" type="text">
                     </div>
                     <div>
                         <div>Search By</div>
-                        <input placeholder="Customer ID" type="text">
+                        <input id="inputCusIdSearch" placeholder="Customer ID" type="text">
                     </div>
                 </div>
                 <div>
-                    <div>Add Customer</div>
-                    <div>Delete</div>
-                    <div>Update</div>
-                    <div>Clear</div>
+                    <div id="addCus">Add Customer</div>
+                    <div id="deleteCus">Delete</div>
+                    <div id="updateCus">Update</div>
+                    <div id="clearCus">Clear</div>
 
                 </div>
                 <div>
-                    <table border="1">
-                        <thead>
-                        <th>Customer ID</th>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Salary</th>
+                    <table >
+                        <thead style="background-color: #AFD3E2 ">
+                        <tr>
+                            <th scope="col"  id="i">Customer Id</th>
+                            <th scope="col"  id="n">Name</th>
+                            <th scope="col"  id="g">Address</th>
+                            <th scope="col"  id="t">Salary</th>
+
+                        </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="customer_table">
+
+
 
                         </tbody>
                     </table>
@@ -251,23 +252,23 @@
                         <p>Item Details</p>
                     </div>
                     <div>
-                        <input placeholder=" Item Code" type="text">
-                        <input placeholder=" Name" type="text">
+                        <input id="inputItemId" placeholder=" Item Code" type="text">
+                        <input id="inputItemName" placeholder=" Name" type="text">
                     </div>
                     <div>
-                        <input placeholder=" Unite Price" type="text">
-                        <input placeholder=" Quantity" type="text">
+                        <input  id="inputItemUnitPrice" placeholder=" Unite Price" type="text">
+                        <input  id="inputItemQuantity" placeholder=" Quantity" type="text">
                     </div>
                     <div>
                         <div>Search By</div>
-                        <input placeholder=" Item Code" type="text">
+                        <input id="inputItemIdSearch" placeholder=" Item Code" type="text">
                     </div>
                 </div>
                 <div>
-                    <div>Add Item</div>
-                    <div>Delete</div>
-                    <div>Update</div>
-                    <div>Clear</div>
+                    <div id="addItem">Add Item</div>
+                    <div id="deleteItem">Delete</div>
+                    <div id="updateItem">Update</div>
+                    <div id="clearItem">Clear</div>
 
                 </div>
                 <div>
@@ -278,7 +279,7 @@
                         <th>Unit Price</th>
                         <th>Quantity</th>
                         </thead>
-                        <tbody>
+                        <tbody id="item_table">
 
                         </tbody>
                     </table>
@@ -341,17 +342,28 @@
 <footer>
     <p>Copyright @ 2023 All Right Reserved By Supun Madubhashitha</p>
 </footer>
-</body>
+<script src="asset/JQuery/jquery-3.6.1.min.js"></script>
+
 <script>
     let tabContents = document.getElementsByClassName("form");
 
     function openForm(paneName) {
-        console.log("snbdbsdbhsd");
         let tabContent;
         for (tabContent of tabContents) {
             tabContent.classList.remove("active-form");
         }
         document.getElementById(paneName).classList.add("active-form")
     }
+
+
 </script>
+<script type="module" src="model/Customer.js"></script>
+<script type="module" src="model/Item.js"></script>
+
+<script type="module" src="controller/CustomerController.js"></script>
+<script type="module" src="controller/ItemController.js"></script>
+</body>
+
+
+
 </html>
